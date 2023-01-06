@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gato CL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="text/javascript" src="script/main.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <meta name="author" content="Jeremy" />
+    <meta
+      name="description"
+      content="Juega al famoso juego del Gato o Tres en raya o Tic tac toe..."
+    />
+    <meta
+      name="keywords"
+      content="GatoCl, Gato, Tic tac toe, Tres en raya, x/o"
+    />
+
+    <link rel="icon" href="icono.ico" type="image/ico" sizes="16x16" />
+  </head>
+
+  <body>
+    <header class="header"><h1>Gato CL</h1></header>
+    <article class="article">
+      <section class="article__win">
+        <p class="win__text"></p>
+        <button onclick="restablecer()" title="Restablecer">Restablecer</button>
+      </section>
+      <section class="article__main">
+        <div class="main-container">
+          <button
+            id="position__1"
+            title="GatoCL"
+            onclick="escribirTablero('position__1')"
+          ></button
+          ><button
+            id="position__2"
+            title="GatoCL"
+            onclick="escribirTablero('position__2')"
+          ></button
+          ><button
+            id="position__3"
+            title="GatoCL"
+            onclick="escribirTablero('position__3')"
+          ></button
+          ><button
+            id="position__4"
+            title="GatoCL"
+            onclick="escribirTablero('position__4')"
+          ></button
+          ><button
+            id="position__5"
+            title="GatoCL"
+            onclick="escribirTablero('position__5')"
+          ></button
+          ><button
+            id="position__6"
+            title="GatoCL"
+            onclick="escribirTablero('position__6')"
+          ></button
+          ><button
+            id="position__7"
+            title="GatoCL"
+            onclick="escribirTablero('position__7')"
+          ></button
+          ><button
+            id="position__8"
+            title="GatoCL"
+            onclick="escribirTablero('position__8')"
+          ></button
+          ><button
+            id="position__9"
+            title="GatoCL"
+            onclick="escribirTablero('position__9')"
+          ></button>
+        </div>
+      </section>
+      <section class="score">
+        <ul class="score-container">
+          <li class="score__item">
+            <p class="score__local">
+              Local:
+
+              <span id="score__local">0 </span> pts
+            </p>
+          </li>
+          <li class="score__item">
+            <p class="score__rival">
+              Rival:
+
+              <span id="score__rival">0 </span> pts
+            </p>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

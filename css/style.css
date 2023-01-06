@@ -1,0 +1,52 @@
+body {
+    background: linear-gradient(to right, #ACC8E6, #AAA8E6);
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 18px
+}
+.header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #111
+}
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(60px, 140px));
+    grid-auto-rows: 140px;
+    padding: 5px 5px 0 5px;
+    justify-content: center
+}
+.main-container button {
+    background: #fffe;
+    border: 2px solid #000;
+    transition: background .12s, filter 0.12s;
+    font-size: 35px
+}
+.main-container button:active {
+    background: #ACC8E6;
+    filter: blur(1px)
+}
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    background: #fffc;
+    list-style: none
+}
+@media only screen and (max-width: 430px) {
+    .score-container {
+        flex-direction: column
+    }
+}
+.article__win {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 86vh;
+    justify-content: center;
+    align-items: center;
+    background: #fff9
+}
+.article__win * {
+    font-size: 40px
+}
